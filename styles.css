@@ -974,3 +974,136 @@ tr:last-child td {
     margin-top: 14px;
   }
 }
+
+/* --- Metric Card Interactive Links --- */
+.metric.metric-clickable {
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  position: relative;
+  user-select: none;
+}
+.metric.metric-clickable:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(28, 103, 163, 0.12);
+  border-color: #7bb5e2;
+}
+.metric.metric-clickable:hover strong {
+  color: var(--blue);
+}
+.metric-num-link {
+  color: var(--navy);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+.metric-num-link:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.metric span b {
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+.metric.metric-clickable:hover span b {
+  transform: translateX(3px);
+}
+
+/* --- Office Management Badges --- */
+.badge-division {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  display: inline-block;
+}
+.badge-subdiv {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  display: inline-block;
+}
+.badge-branch {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #e9d5ff;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  display: inline-block;
+}
+.badge-section {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  display: inline-block;
+}
+
+/* --- Multi-Office Badges & Selection --- */
+.badge-all-offices {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.badge-primary-office {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.badge-assigned-office {
+  background: #f8fafc;
+  color: #334155;
+  border: 1px dashed #cbd5e1;
+  font-weight: 600;
+  font-size: 10.5px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.office-select-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 11px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.office-select-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+.office-select-item.selected {
+  background: #f0f9ff;
+  border-color: #38bdf8;
+}
